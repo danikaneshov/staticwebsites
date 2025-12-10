@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Нанимаем на работу</title>
 
-  <!-- Шрифт -->
+  <!-- Шрифт Montserrat -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Стили -->
@@ -17,57 +17,73 @@
   <!-- Экран загрузки -->
   <div id="loader" class="loading-container">
     <div class="spinner"></div>
-    <p class="loader-text">Подготавливаем вакансию…</p>
+    <p class="loader-text" data-i18n="loading">Подготавливаем вакансию…</p>
   </div>
 
   <!-- Основной контент -->
   <div id="content" class="container" style="display: none;">
     <div class="logo-wrap">
       <div class="logo-circle">
-        <img src="https://s3.coinmarketcap.com/static-gravity/image/65bd59de945a4de88cb62930b17d260b.jpg" alt="logo" class="logo-img">
+        <img
+          src="https://s3.coinmarketcap.com/static-gravity/image/65bd59de945a4de88cb62930b17d260b.jpg"
+          alt="logo"
+          class="logo-img"
+        >
       </div>
 
-      <div class="logo-subtitle">официальный партнёр</div>
+      <div class="logo-subtitle" data-i18n="partner">официальный партнёр</div>
     </div>
 
-    <div class="subscribers">1 338 395 подписчиков</div>
+    <div class="subscribers" data-i18n="subscribers">1 338 395 подписчиков</div>
 
     <div class="pill-deadline">
       <span class="icon">⏳</span>
-      <span>Набор закрывается через 12 часов</span>
+      <span data-i18n="deadline">Набор закрывается через 12 часов</span>
     </div>
 
-    <h1>Нанимаем на удалённую работу</h1>
-    <p class="subtitle">Обучим с нуля, поможем с первой сделкой и закрепим за вами куратора.</p>
+    <h1 data-i18n="title">Нанимаем на удалённую работу</h1>
+    <p class="subtitle" data-i18n="subtitle">
+      Обучим с нуля, поможем с первой сделкой и закрепим за вами куратора.
+    </p>
 
     <ul>
       <li>
         <span class="item-icon">💰</span>
-        <span class="item-text">Доход <strong>300–1000&nbsp;$</strong> при активной работе</span>
+        <span class="item-text" data-i18n="li1">
+          Доход <strong>300–1000&nbsp;$</strong> при активной работе
+        </span>
       </li>
       <li>
         <span class="item-icon">🌍</span>
-        <span class="item-text">Работай из любой точки мира — нужен только интернет</span>
+        <span class="item-text" data-i18n="li2">
+          Работай из любой точки мира — нужен только интернет
+        </span>
       </li>
       <li>
         <span class="item-icon">📱</span>
-        <span class="item-text">Подходит для смартфона и ноутбука, без сложных программ</span>
+        <span class="item-text" data-i18n="li3">
+          Подходит для смартфона и ноутбука, без сложных программ
+        </span>
       </li>
       <li>
         <span class="item-icon">🎧</span>
-        <span class="item-text">Куратор на связи в Telegram и пошаговые инструкции</span>
+        <span class="item-text" data-i18n="li4">
+          Куратор на связи в Telegram и пошаговые инструкции
+        </span>
       </li>
     </ul>
 
     <a id="tg-button" href="#" class="black-button">
       <span class="icon">✉️</span>
-      <span>Подать заявку в Telegram</span>
+      <span data-i18n="cta">Подать заявку в Telegram</span>
     </a>
 
-    <div class="note">Нажимая кнопку, вы переходите в Telegram-бота для быстрой заявки.</div>
+    <div class="note" data-i18n="note">
+      Нажимая кнопку, вы переходите в Telegram-бота для быстрой заявки.
+    </div>
   </div>
 
-  <!-- Логика загрузки -->
+  <!-- Логика загрузочного экрана -->
   <script>
     setTimeout(() => {
       document.getElementById("loader").style.display = "none";
@@ -77,7 +93,7 @@
     }, 800);
   </script>
 
-  <!-- Подключение конфига -->
+  <!-- Конфиг: ссылка на ТГ + языки -->
   <script src="config.js"></script>
 
 </body>
